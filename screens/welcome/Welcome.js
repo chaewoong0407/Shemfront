@@ -1,18 +1,9 @@
 import * as React from 'react';
-import { TouchableOpacity, View, Text, StyleSheet, Image } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { View, Text, StyleSheet, Image } from 'react-native';
 
-function WelcomeFare() {
-    return(
-        <View style={styles.container}>
-            <Text>Hello</Text>
-        </View>
-    )
-}
 function Welcome({ navigation }) {
     return (
-        <View style={styles.cotainer} onTouchEnd={() => navigation.push('Home')}>
+        <View style={styles.cotainer} onTouchEnd={() => navigation.push('WelcomeFare')}>
             <View style={[styles.bigCircle, { top: 90, left: 140}]}/>
             <View style={[styles.bigCircle, { top: 50, left: 100}]}/>
             <View style={[styles.middleCircle, { top: -210, left: 60}]}/>
@@ -41,6 +32,11 @@ function Welcome({ navigation }) {
                 <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#000000', marginBottom: 10}}>AI를 이용한 우리집 매니저</Text>
                 <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#9B9B9B'}}>AI 매니저를 통해서 우리집의 전력</Text>
                 <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#9B9B9B'}}>시스템을 통제할 수 있습니다</Text>
+            </View>
+            <View style={styles.circleIcon}>
+                <View style={[styles.contentIcon, { backgroundColor: '#84E8A6' }]}/>
+                <View style={styles.contentIcon}/>
+                <View style={styles.contentIcon}/>
             </View>
         </View>
     )
@@ -110,20 +106,23 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    arrow: {
-        transform:[
-            {rotate:'45deg'}
-        ],
-        borderStyle: 'solid',
-        width:25,
-        height:25,
-        left: 370,
-        backgroundColor:'#FFFFFF',
-        marginTop:-4,
-        borderColor: '#C1C1C1',
-        borderTopWidth: 4,
-        borderRightWidth: 4,
-        bottom: 560
+    circleIcon: {
+        flexDirection: 'row',
+        bottom: 270,
+        flex: 1,
+        left: 160,
+        width: 80,
+        height: 30,
+        backgroundColor: '#F1F1F1',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    contentIcon: {
+        backgroundColor: '#E2E2E2',
+        width: 10,
+        height: 10,
+        margin: 3,
+        borderRadius: 30
     }
 });
 

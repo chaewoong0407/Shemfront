@@ -1,7 +1,5 @@
 import * as React from 'react';
-import { TouchableOpacity, View, Text, StyleSheet } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { TouchableOpacity, View, Text, StyleSheet } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient';
 
 
@@ -16,10 +14,10 @@ function Home({ navigation }) {
             <Text style={styles.titleText}>우리집 전력 관리 앱</Text>
           </View>
           <View style={styles.footer}>
-            <TouchableOpacity style={styles.button} onPress={() => alert('로그인 버튼')}>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.push('Login')}>
               <Text style={styles.buttonText}>로그인</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={() => alert('회원가입 버튼')}>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.push('Register')}>
               <Text style={styles.buttonText}>회원가입</Text>
             </TouchableOpacity>
           </View>
