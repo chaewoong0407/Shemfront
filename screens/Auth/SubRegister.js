@@ -16,7 +16,7 @@ function Login({ navigation }) {
             <TextInput style={styles.input} placeholder="닉네임을 입력해주세요." placeholderTextColor="#868686"></TextInput>  
         </View>
         <View style={styles.footer}>
-            <TouchableOpacity style={styles.loginButton} onPress={() => alert('시작하기')}>
+            <TouchableOpacity style={styles.loginButton} onPress={() => navigation.push('TabNavigator')}>
                 <Text style={{ fontSize: 20, color: '#FFFFFF', fontWeight: '500' }}>시작하기</Text>
             </TouchableOpacity>
         </View>
