@@ -42,7 +42,7 @@ function AI_Manger({ navigation }) {
             </View>
             <Image source={require('../../../../assets/images/Line.png')} style={{ width: 409, height: 80, top: 35}}/>
             <TouchableOpacity style={{ backgroundColor: '#5EE4B1', width: 85, height: 85, borderRadius: 50, bottom: 60, alignItems: 'center',
-                    justifyContent: 'center', elevation: 5 }}>
+                    justifyContent: 'center', elevation: 5 }} onPress={() => navigation.push('AIHelp')}>
                 <Image source={require('../../../../assets/images/mic.png')}/>
             </TouchableOpacity>
         </View>

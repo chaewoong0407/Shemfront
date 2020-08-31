@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { HomeScreen, WelcomeScreen, WelcomeFareScreen, InformationScreen, LoginScreen, RegisterScreen, SubRegisterScreen, TabNavigatorScreen, AI_Manager }from './screens';
+import { HomeScreen, WelcomeScreen, WelcomeFareScreen, InformationScreen, LoginScreen, RegisterScreen, SubRegisterScreen, TabNavigatorScreen, AI_Manager, AI_Help }from './screens';
 
 
 
@@ -20,6 +20,7 @@ function App() {
         <Stack.Screen name="SubRegister" component={SubRegisterScreen}/>
         <Stack.Screen name="TabNavigator" component={TabNavigatorScreen}/>
         <Stack.Screen name="AIManager" component={AI_Manager}/>
+        <Stack.Screen name="AIHelp" component={AI_Help}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

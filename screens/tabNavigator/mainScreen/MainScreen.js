@@ -28,7 +28,7 @@ function MainScreen({ navigation }) {
                     <Image source={require('../../../assets/images/money.png')}/>
                 </View>
                 <Text style={{ bottom: 50, right: 44, fontSize: 12 }}>예상 요금</Text>
-                <Text style={{ bottom: 50, right: 44, fontSize: 20, color: '#2A774D' }}>67,135원</Text>
+                <Text style={{ bottom: 50, right: 44, fontSize: 20, color: '#2A774D' }}>67,135 원</Text>
             </View>
             <View style={{ flex: 1 }}>
                 <View style={[styles.Circle, { right: 90}]}>

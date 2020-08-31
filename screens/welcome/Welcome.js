@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
     },
     circleIcon: {
         flexDirection: 'row',
-        bottom: 270,
+        bottom: 220,
         flex: 1,
         left: 160,
         width: 80,

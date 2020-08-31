@@ -23,7 +23,7 @@ function TabNavigator() {
               } else if (route.name === '제어') {
                 iconName = focused ? require('../../assets/images/AfterControlIcon.png') : require('../../assets/images/ControlIcon.png');
               } else if (route.name === '설정') {
-                iconName = focused ? require('../../assets/images/SettingIcon.png') : require('../../assets/images/SettingIcon.png')
+                iconName = focused ? require('../../assets/images/AfterSettingIcon.png') : require('../../assets/images/SettingIcon.png')
               }
             return <Image source={iconName} style={{ width: 24, height: 24 }}/>;
           },

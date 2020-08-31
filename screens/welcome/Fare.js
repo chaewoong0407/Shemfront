@@ -79,11 +79,10 @@ const styles = StyleSheet.create({
     circleIcon: {
         flexDirection: 'row',
         flex: 1,
-        bottom: 50,
+        bottom: 25,
         left: 160,
         width: 80,
         height: 30,
-        backgroundColor: '#F1F1F1',
         justifyContent: 'center',
         alignItems: 'center',
     },
